@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bean counting</title>
+</head>
+<body>
+<script>
+    const countChar = (string, char)=> {
+        let count = 0;
+        for (let i = 0; i <= string.length; i++) {
+            if (string[i] === char) count++;
+        }
+        return count;
+    }
+
+    const countBs = string => countChar(string, "B")
+    console.log(countChar("kakkerlak", "k"));
+    console.log(countBs("BBCaasd B"));
+</script>
+</body>
+</html>

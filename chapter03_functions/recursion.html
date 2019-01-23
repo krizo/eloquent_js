@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recursionb</title>
+</head>
+<body>
+<script>
+    const isEven = (n) => {
+        if (n === 0) return true;
+        else if (n === 1) return false;
+        else if (n < 1) return isEven(-n);
+        else  return isEven(n - 2);
+    }
+</script>
+</body>
+</html>
