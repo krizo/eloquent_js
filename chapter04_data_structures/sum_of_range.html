@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title> Sum of range </title>
+</head>
+
+<body>
+  <script>
+    const range = (from, to, increment = 1) => {
+      let numbers = [];
+      for (let i = from; i <= to; i += increment) {
+        numbers.push(i);
+      }
+      return numbers;
+    }
+
+    const sum = numbers => numbers.reduce((total, item) => total += item, 0)
+    
+  </script>
+</body>
+
+</html>
