@@ -8,12 +8,14 @@
 
 <body>
   <script>
-    const range = (from, to, increment = 1) => {
-      let numbers = [];
-      for (let i = from; i <= to; i += increment) {
-        numbers.push(i);
+    const range = (start, end, increment = start < end ? 1 : -1)=> {
+      let array = [];
+      if (increment > 0) {
+        for (let i = start; i <= end; i += increment) array.push(i);
+      } else {
+        for (let i = start; i >= end; i += increment) { console.log(i); array.push(i); }
       }
-      return numbers;
+      return array;
     }
 
     const sum = numbers => numbers.reduce((total, item) => total += item, 0)
